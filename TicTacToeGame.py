@@ -8,7 +8,7 @@ player1 = []
 player2 = []
 
 root = Tk()
-root.title("Tic Tac Toe :shakti")
+root.title("Tic Tac Toe : SHAKTI")
 
 button1 = ttk.Button(root, text = '')
 button1.grid(row = 0, column = 0, sticky = 'snew', ipadx = 40, ipady = 40)
@@ -54,7 +54,7 @@ def ButtonClick(id):
    if(activePlayer == 1):
       setLayout(id, "X")
       player1.append(id)
-      root.title("Tic Tac Toe : Player 2")
+      root.title("Tic Tac Toe : Parzival")
       activePlayer = 2
       print("P1:{}".format(player1))
       autoPlay()
@@ -62,7 +62,7 @@ def ButtonClick(id):
    elif(activePlayer == 2):
       setLayout(id, "O")
       player2.append(id)
-      root.title("Tic Tac Toe : Player 1")
+      root.title("Tic Tac Toe : Zeal")
       activePlayer = 1
       print("P2:{}".format(player2))
 
